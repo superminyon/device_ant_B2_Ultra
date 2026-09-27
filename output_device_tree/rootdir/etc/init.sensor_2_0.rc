@@ -1,9 +1,0 @@
-# MTK platform .rc configure
-on post-fs-data
-    # calibration
-    mkdir /data/vendor/sensor 0774 system system
-    # Sensor
-    #Antaiui <AI_BSP_SNS> <wutj> <2022-03-13> change hf_manager group start
-    chmod 0660 /dev/hf_manager
-    chown radio system /dev/hf_manager
-    #Antaiui <AI_BSP_SNS> <wutj> <2022-03-13> change hf_manager group end
